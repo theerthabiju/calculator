@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -35,6 +35,7 @@ body {
     background-color: rgb(255, 255, 255);
     
 }
+
 .calculator form button{
     font-weight: bold;
     border: 0;
@@ -66,4 +67,4 @@ body {
     width: 165px;
     border-radius: 10px;
 }
-
+ */
