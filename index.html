@@ -9,16 +9,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="/assets/stylecss/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
 
 <body class="flex justify-center items-center h-screen bg-black">
+<<<<<<< HEAD
     <div class="container flex justify-center items-center h-full w-full">
         <div class="bg-white p-6 rounded-2xl shadow-lg w-80 sm:w-96">
              <form>
+=======
+    <div class=" flex justify-center items-center h-full w-full">
+        <div class="bg-white p-6 rounded-2xl shadow-lg w-80 sm:w-96 ">
+            <form>
+>>>>>>> 21a0ee2 (fourth commit)
                 <div>
                     <input id="displayname" type="text" name="display" placeholder="0"
                         class="w-full text-4xl h-20 p-3 mb-4 border border-orange-500 rounded bg-white text-right"
@@ -60,37 +64,16 @@
             </form>
         </div>
     </div>
-    <script>
-        $(document).ready(function () {
-            let $display = $("#displayname");
-
-            $("button").click(function () {
-                let value = $(this).val();
-
-                if (value === "AC") {
-                    $display.val("");
-                } else if (value === "DEL") {
-                    $display.val($display.val().slice(0, -1));
-                } else if (value === "=") {
-                    try {
-                        $display.val(eval($display.val()) || '');
-                    } catch (e) {
-                        $display.val("Error");
-                    }
-                } else {
-                    $display.val($display.val() + value);
-                }
-            });
-        });
-    </script>
-
   
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
